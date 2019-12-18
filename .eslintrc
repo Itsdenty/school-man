@@ -14,6 +14,7 @@
     "no-param-reassign": 0,
     "arrow-body-style": 0,
     "comma-dangle": 0,
+    "linebreak-style": ["error", "unix"],
     "curly": ["error", "multi-line"],
     "import/no-unresolved": [2, { "commonjs": true }],
     "no-shadow": ["error", { "allow": ["req", "res", "err"] }],
