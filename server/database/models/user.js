@@ -9,8 +9,6 @@ const user = (mongoose, connection) => {
       phoneNumber: { type: String, unique: true, sparse: true },
       email: { type: String, unique: true, sparse: true },
       username: { type: String },
-      verificationMode: { type: String },
-      verificationCode: { type: String },
       firstname: { type: String },
       lastname: { type: String },
       address: { type: String },
