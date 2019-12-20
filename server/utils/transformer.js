@@ -2,6 +2,7 @@ const transformer = {},
   errCodes = [401, 403, 500, 400];
 
 transformer.transformResponse = (status, data) => {
+  console.log(data);
   if (errCodes.includes(status)) {
     return {
       status,
@@ -23,6 +24,7 @@ transformer.transformResponse = (status, data) => {
  * @returns {json} transformed validation error
  */
 transformer.transformExpressValidationErrors = (errors) => {
+  console.log(errors);
   let msgs = '';
 
   if (!Array.isArray(errors)) return msgs;

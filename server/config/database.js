@@ -5,7 +5,7 @@ const Database = {};
 const Promise = require('bluebird');
 
 Database.mongodb = {
-  uri: process.env.MONGODB_URI,
+  uri: process.env.MONGODB_URI || 'mongodb://itsdenty:0l0r30f3@ds159184.mlab.com:59184/rebuild-test',
   options: {
     native_parser: true,
     socketTimeoutMS: 0,

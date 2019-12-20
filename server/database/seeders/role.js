@@ -4,7 +4,7 @@ import permissions from '../../config/permission';
 
 dotenv.config();
 
-database.mongoose.connect(database.mongodbConfig.uri, 
+database.mongoose.connect(database.mongodbConfig.uri,
   database.mongodbConfig.options, (err) => {
     if (err) {
       console.log('Mongodb connection error', err);
